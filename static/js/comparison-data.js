@@ -33,25 +33,25 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -106,19 +106,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -173,19 +173,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -240,19 +240,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -307,19 +307,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -374,19 +374,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -441,19 +441,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -508,19 +508,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
@@ -581,25 +581,25 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -666,25 +666,25 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -751,25 +751,25 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -836,25 +836,25 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -915,19 +915,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -958,25 +958,25 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -1016,65 +1016,6 @@ window.COMPARISON_DATA = {
   "videoBase": "./assets/comparison",
   "videos": [
     {
-      "dir": "0003_ocean-birds_edit1",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0003_ocean-birds_edit1",
-      "id": "0003",
-      "instruction": "ocean-birds edit1",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "Ditto",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "Sama",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "Univideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "Vino",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
       "dir": "0007_guitar-violin_edit1",
       "benchmark": "five",
       "benchmarkLabel": "FiVE-Bench",
@@ -1091,350 +1032,25 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "Sama",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "Univideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "Vino",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "dir": "0011_lucia_edit4",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0011_lucia_edit4",
-      "id": "0011",
-      "instruction": "lucia edit4",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "Ditto",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "Omni",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "Sama",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "Univideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "Vino",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "dir": "0057_dog_edit5",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0057_dog_edit5",
-      "id": "0057",
-      "instruction": "dog edit5",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "Ditto",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "Omni",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "Sama",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "Univideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "Vino",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "dir": "0075_A_bicycle_edit4",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0075_A_bicycle_edit4",
-      "id": "0075",
-      "instruction": "A bicycle edit4",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "Ditto",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "Omni",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "Sama",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "Univideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "Vino",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "dir": "0094_A_swan_edit2",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0094_A_swan_edit2",
-      "id": "0094",
-      "instruction": "A swan edit2",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "Ditto",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "Omni",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "Sama",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "Univideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "Vino",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "dir": "0098_A_squirrel_edit4",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0098_A_squirrel_edit4",
-      "id": "0098",
-      "instruction": "A squirrel edit4",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "Ditto",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -1481,25 +1097,25 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
@@ -1546,25 +1162,25 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "ditto",
-          "label": "Ditto",
+          "label": "DITTO",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "kiwi",
-          "label": "Kiwi",
+          "label": "Kiwi-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "lucy",
-          "label": "Lucy",
+          "label": "Lucy-Edit",
           "role": "baseline",
           "group": "small"
         },
         {
           "name": "omni",
-          "label": "Omni",
+          "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
         },
