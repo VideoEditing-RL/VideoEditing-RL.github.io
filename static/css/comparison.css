@@ -1,0 +1,205 @@
+/* Qualitative comparison grids.
+   Self-contained on purpose: the page's Bulma stylesheets are not vendored,
+   so nothing here may rely on them. */
+
+.cmp-section {
+  padding: 3rem 1.5rem;
+  font-family: "Google Sans", "Noto Sans", system-ui, -apple-system, sans-serif;
+  color: #1f2430;
+}
+
+.cmp-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cmp-heading {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cmp-intro {
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto 1.75rem;
+  line-height: 1.6;
+  color: #4a5160;
+}
+
+/* Category filter */
+
+.cmp-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.cmp-chip {
+  border: 1px solid #d3d8e0;
+  background: #fff;
+  color: #3c4350;
+  border-radius: 999px;
+  padding: 0.35rem 0.95rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.cmp-chip:hover {
+  border-color: #8b93a3;
+}
+
+.cmp-chip[aria-pressed="true"] {
+  background: #1f2430;
+  border-color: #1f2430;
+  color: #fff;
+}
+
+/* One block per clip */
+
+.cmp-clip {
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem 1.35rem;
+  margin-bottom: 1.5rem;
+  background: #fbfcfd;
+}
+
+.cmp-clip[hidden] {
+  display: none;
+}
+
+.cmp-clip-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.cmp-badge {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #eef1f6;
+  color: #55607a;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+}
+
+.cmp-clip-id {
+  font-variant-numeric: tabular-nums;
+  color: #8b93a3;
+  font-size: 0.85rem;
+}
+
+.cmp-instruction {
+  font-size: 1.02rem;
+  font-weight: 500;
+}
+
+/* Playback controls */
+
+.cmp-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.cmp-play {
+  width: 2.1rem;
+  height: 2.1rem;
+  flex: none;
+  border: 1px solid #d3d8e0;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1;
+  color: #1f2430;
+}
+
+.cmp-play:hover {
+  border-color: #8b93a3;
+}
+
+.cmp-scrub {
+  flex: 1;
+  accent-color: #1f2430;
+}
+
+.cmp-counter {
+  flex: none;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.82rem;
+  color: #6b7383;
+  min-width: 5.5rem;
+  text-align: right;
+}
+
+/* Method tiles */
+
+.cmp-grid {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.cmp-tile {
+  margin: 0;
+}
+
+.cmp-frame {
+  position: relative;
+  aspect-ratio: var(--cmp-ar, 1.778);
+  background: #10131a;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.cmp-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.cmp-tile figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #55607a;
+}
+
+.cmp-tile[data-role="ours"] .cmp-frame {
+  outline: 2px solid #2f6df6;
+  outline-offset: 0;
+}
+
+.cmp-tile[data-role="ours"] figcaption,
+.cmp-tile[data-role="input"] figcaption {
+  font-weight: 600;
+  color: #1f2430;
+}
+
+.cmp-note {
+  font-size: 0.82rem;
+  color: #8b93a3;
+  text-align: center;
+  margin-top: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .cmp-section {
+    padding: 2rem 0.9rem;
+  }
+
+  .cmp-clip {
+    padding: 0.9rem 0.8rem 1.1rem;
+  }
+}
