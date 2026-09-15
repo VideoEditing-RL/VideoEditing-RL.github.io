@@ -1,0 +1,84 @@
+/* Page chrome for the project site. Pairs with the CDN copy of Bulma, and
+   replaces the stylesheet the Nerfies template ships with. */
+
+body {
+  font-family: "Noto Sans", system-ui, -apple-system, sans-serif;
+  color: #1f2430;
+}
+
+.publication-title {
+  font-family: "Google Sans", "Noto Sans", system-ui, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.publication-method {
+  font-family: "Google Sans", "Noto Sans", system-ui, sans-serif;
+  font-size: 1.05rem;
+  color: #2f6df6;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.1rem;
+}
+
+.publication-authors {
+  font-family: "Google Sans", "Noto Sans", system-ui, sans-serif;
+  margin-bottom: 0.6rem;
+}
+
+.publication-authors a,
+.publication-authors a:visited {
+  color: #2f6df6;
+}
+
+.publication-venue {
+  color: #6b7383;
+  margin-bottom: 1.5rem;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.publication-links .button {
+  background: #1f2430;
+  border-color: #1f2430;
+  color: #fff;
+}
+
+.publication-links .button:hover {
+  background: #363d4d;
+  border-color: #363d4d;
+  color: #fff;
+}
+
+.content h2.title,
+h2.title.is-3 {
+  font-family: "Google Sans", "Noto Sans", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+/* Marks the method name wherever it appears in running text. */
+.method-name {
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+.todo {
+  background: #fff6d8;
+  border-bottom: 1px dashed #d9a800;
+  padding: 0 0.2em;
+}
+
+footer.footer {
+  background: #fafbfc;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+footer.footer .content {
+  font-size: 0.85rem;
+  color: #6b7383;
+}

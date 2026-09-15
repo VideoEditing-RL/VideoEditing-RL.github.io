@@ -161,11 +161,17 @@
   overflow: hidden;
 }
 
-.cmp-frame img {
+.cmp-frame img,
+.cmp-frame video {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.cmp-hint {
+  font-size: 0.82rem;
+  color: #8b93a3;
 }
 
 .cmp-tile figcaption {

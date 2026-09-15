@@ -156,5 +156,62 @@ window.COMPARISON_DATA = {
       "slots": 8,
       "aspect": 1.7778
     }
+  ],
+  "videoBase": "./assets/comparison",
+  "videos": [
+    {
+      "dir": "0007_guitar-violin_edit1",
+      "category": "",
+      "clip": "0007_guitar-violin_edit1",
+      "id": "0007",
+      "instruction": "guitar-violin edit1",
+      "methods": [
+        "org",
+        "ditto",
+        "kiwi",
+        "lucy",
+        "omni",
+        "sama",
+        "univideo",
+        "vino",
+        "our"
+      ]
+    },
+    {
+      "dir": "global_style/0022_global_style_Apply_the_dawn_aesth",
+      "category": "global_style",
+      "clip": "0022_global_style_Apply_the_dawn_aesth",
+      "id": "0022",
+      "instruction": "Apply the dawn aesth",
+      "methods": [
+        "org",
+        "ditto",
+        "kiwi",
+        "lucy",
+        "omni",
+        "sama",
+        "univideo",
+        "vino",
+        "our"
+      ]
+    },
+    {
+      "dir": "local_remove/0236_local_remove_Remove_the_person_wi",
+      "category": "local_remove",
+      "clip": "0236_local_remove_Remove_the_person_wi",
+      "id": "0236",
+      "instruction": "Remove the person wi",
+      "methods": [
+        "org",
+        "ditto",
+        "kiwi",
+        "lucy",
+        "omni",
+        "sama",
+        "univideo",
+        "vino",
+        "our"
+      ]
+    }
   ]
 };
