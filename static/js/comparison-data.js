@@ -1121,19 +1121,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "sama",
-          "label": "Sama",
+          "label": "SAMA",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "univideo",
-          "label": "Univideo",
+          "label": "UniVideo",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "vino",
-          "label": "Vino",
+          "label": "VINO",
           "role": "baseline",
           "group": "large"
         },
@@ -1186,19 +1186,19 @@ window.COMPARISON_DATA = {
         },
         {
           "name": "sama",
-          "label": "Sama",
+          "label": "SAMA",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "univideo",
-          "label": "Univideo",
+          "label": "UniVideo",
           "role": "baseline",
           "group": "large"
         },
         {
           "name": "vino",
-          "label": "Vino",
+          "label": "VINO",
           "role": "baseline",
           "group": "large"
         },
