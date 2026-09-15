@@ -1,23 +1,23 @@
 /* Builds the comparison sections from window.COMPARISON_DATA.
  *
- * Two kinds of block are produced. Frame grids show every method at the same
- * time slot, so scrubbing the slider steps all methods through the clip
- * together. Video grids play the raw results, each at its own frame rate.
- * Either way, media loads only once a block scrolls into view, and playback
- * runs only while it stays there.
+ * Frame grids show every method at the same time slot, so scrubbing the slider
+ * steps all methods through the clip together. They are split by model size:
+ * one section per size group, each showing the input plus the methods in that
+ * group. Video grids play the raw results instead, each at its own frame rate.
+ * Either way media loads only once a block scrolls into view, and playback runs
+ * only while it stays there.
  */
 (function () {
   "use strict";
 
   var DATA = window.COMPARISON_DATA;
-  var root = document.getElementById("cmp-clips");
+  var groupRoot = document.getElementById("cmp-groups");
   var videoRoot = document.getElementById("cmp-videos");
-  if (!DATA || (!root && !videoRoot)) {
+  if (!DATA || (!groupRoot && !videoRoot)) {
     return;
   }
 
   var FPS = 4;
-  var LABELS = { org: "Input", our: "Ours", our_5b: "Ours (5B)" };
   var CATEGORIES = {
     global_style: "Global Style",
     local_add: "Local Add",
@@ -31,54 +31,75 @@
   var reduceMotion = window.matchMedia
     && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  function pretty(name, table) {
-    if (table[name]) {
-      return table[name];
+  function prettyCategory(name) {
+    if (CATEGORIES[name]) {
+      return CATEGORIES[name];
     }
     return name.charAt(0).toUpperCase() + name.slice(1).replace(/_/g, " ");
   }
 
-  function roleOf(method) {
-    if (method === "org") {
-      return "input";
-    }
-    return method.indexOf("our") === 0 ? "ours" : "baseline";
+  /* Methods to show for a clip in a given size group: the input plus that
+   * group's entries. Clips that only cover one group simply come back short. */
+  function methodsFor(clip, groupId) {
+    return clip.methods.filter(function (m) {
+      return m.group === "input" || m.group === groupId;
+    });
+  }
+
+  function hasGroup(clip, groupId) {
+    return clip.methods.some(function (m) {
+      return m.group === groupId;
+    });
   }
 
   function makeHead(clip) {
     var head = document.createElement("div");
     head.className = "cmp-clip-head";
-    head.innerHTML = '<span class="cmp-badge"></span>'
-      + '<span class="cmp-instruction"></span>'
-      + '<span class="cmp-clip-id"></span>';
-    var badge = head.querySelector(".cmp-badge");
-    if (clip.category) {
-      badge.textContent = pretty(clip.category, CATEGORIES);
-    } else {
-      badge.remove();
+
+    var badge = document.createElement("span");
+    badge.className = "cmp-badge";
+    badge.textContent = clip.category
+      ? prettyCategory(clip.category)
+      : clip.benchmarkLabel || "";
+    if (badge.textContent) {
+      head.appendChild(badge);
     }
+
+    var caption = document.createElement("span");
+    caption.className = "cmp-instruction";
     // Category folders name their clips after the instruction, cut to a fixed
     // width, so those captions get an ellipsis. Clips filed without a category
     // are named after the footage instead and read fine as they are.
-    var caption = clip.instruction || clip.clip;
-    head.querySelector(".cmp-instruction").textContent =
-      clip.category ? caption + "\u2026" : caption;
-    head.querySelector(".cmp-clip-id").textContent =
-      clip.id ? "#" + clip.id : "";
+    var text = clip.instruction || clip.clip;
+    caption.textContent = clip.category ? text + "\u2026" : text;
+    head.appendChild(caption);
+
+    var id = document.createElement("span");
+    id.className = "cmp-clip-id";
+    id.textContent = clip.id ? "#" + clip.id : "";
+    head.appendChild(id);
+
     return head;
   }
 
+  var WRAP_WIDTH = 1150;  /* .cmp-wrap at desktop width, minus its padding */
+  var GRID_GAP = 11;      /* .cmp-grid gap, 0.7rem */
+
+  /* Tile columns are set through a minimum width rather than a fixed count, so
+   * narrow viewports drop columns on their own. The count below is what that
+   * minimum yields at desktop width: portrait tiles fit five per row, landscape
+   * three, bumped by one when the preferred count would strand a single tile on
+   * the last row. */
   function makeGrid(aspect, methodCount) {
+    var cols = aspect < 1 ? 5 : 3;
+    if (methodCount > cols && methodCount % cols === 1) {
+      cols += 1;
+    }
+    cols = Math.min(cols, methodCount);
+    var minWidth = Math.floor((WRAP_WIDTH - GRID_GAP * (cols - 1)) / cols);
+
     var grid = document.createElement("div");
     grid.className = "cmp-grid";
-    // Column width is tuned so a desktop-width container lands on 5 portrait
-    // or 3 landscape tiles per row; narrower screens drop columns on their own.
-    // A narrower minimum buys a fourth landscape column when 3 would strand a
-    // single tile on the last row.
-    var minWidth = 200;
-    if (aspect >= 1) {
-      minWidth = methodCount % 3 === 1 ? 270 : 300;
-    }
     grid.style.gridTemplateColumns =
       "repeat(auto-fit, minmax(" + minWidth + "px, 1fr))";
     return grid;
@@ -86,12 +107,12 @@
 
   function frameUrl(clip, method, slot) {
     var padded = "s" + ("00" + slot).slice(-3);
-    return DATA.base + "/" + clip.category + "/" + clip.clip + "/" + method
-      + "/" + padded + ".jpg";
+    return DATA.base + "/" + clip.dir + "/" + method + "/" + padded + ".jpg";
   }
 
-  function ClipView(clip) {
+  function ClipView(clip, methods) {
     this.clip = clip;
+    this.methods = methods;
     this.slot = 0;
     this.timer = null;
     this.loaded = false;
@@ -105,8 +126,7 @@
 
     var block = document.createElement("section");
     block.className = "cmp-clip";
-    block.dataset.category = clip.category;
-
+    block.dataset.benchmark = clip.benchmark;
     block.appendChild(makeHead(clip));
 
     var controls = document.createElement("div");
@@ -146,31 +166,30 @@
 
     block.appendChild(controls);
 
-    var grid = makeGrid(clip.aspect, clip.methods.length);
-
-    clip.methods.forEach(function (method) {
+    var grid = makeGrid(clip.aspect, this.methods.length);
+    this.methods.forEach(function (method) {
       var tile = document.createElement("figure");
       tile.className = "cmp-tile";
-      tile.dataset.role = roleOf(method);
+      tile.dataset.role = method.role;
 
       var box = document.createElement("div");
       box.className = "cmp-frame";
       box.style.setProperty("--cmp-ar", String(clip.aspect));
 
       var img = document.createElement("img");
-      img.alt = pretty(method, LABELS) + " result";
+      img.alt = method.label + " result";
       img.loading = "lazy";
       img.decoding = "async";
-      img.src = frameUrl(clip, method, 0);
+      img.src = frameUrl(clip, method.name, 0);
       box.appendChild(img);
 
       var caption = document.createElement("figcaption");
-      caption.textContent = pretty(method, LABELS);
+      caption.textContent = method.label;
 
       tile.appendChild(box);
       tile.appendChild(caption);
       grid.appendChild(tile);
-      self.images.push({ method: method, img: img });
+      self.images.push({ name: method.name, img: img });
     });
 
     block.appendChild(grid);
@@ -183,7 +202,7 @@
     this.slot = ((slot % clip.slots) + clip.slots) % clip.slots;
     var self = this;
     this.images.forEach(function (entry) {
-      entry.img.src = frameUrl(clip, entry.method, self.slot);
+      entry.img.src = frameUrl(clip, entry.name, self.slot);
     });
     this.scrub.value = this.slot;
     this.counter.textContent = "frame " + (this.slot + 1) + " / " + clip.slots;
@@ -196,10 +215,10 @@
     }
     this.loaded = true;
     var clip = this.clip;
-    clip.methods.forEach(function (method) {
+    this.methods.forEach(function (method) {
       for (var slot = 0; slot < clip.slots; slot += 1) {
         var img = new Image();
-        img.src = frameUrl(clip, method, slot);
+        img.src = frameUrl(clip, method.name, slot);
       }
     });
   };
@@ -231,6 +250,7 @@
    * tile loops at its own pace rather than pretending to be frame-synced. */
   function VideoView(clip) {
     this.clip = clip;
+    this.methods = clip.methods;
     this.videos = [];
     this.loaded = false;
     this.playing = false;
@@ -243,7 +263,7 @@
 
     var block = document.createElement("section");
     block.className = "cmp-clip";
-    block.dataset.category = clip.category || "uncategorized";
+    block.dataset.benchmark = clip.benchmark;
     block.appendChild(makeHead(clip));
 
     var controls = document.createElement("div");
@@ -268,11 +288,11 @@
     controls.appendChild(hint);
     block.appendChild(controls);
 
-    var grid = makeGrid(1.778, clip.methods.length);
-    clip.methods.forEach(function (method) {
+    var grid = makeGrid(1.778, this.methods.length);
+    this.methods.forEach(function (method) {
       var tile = document.createElement("figure");
       tile.className = "cmp-tile";
-      tile.dataset.role = roleOf(method);
+      tile.dataset.role = method.role;
 
       var box = document.createElement("div");
       box.className = "cmp-frame";
@@ -283,9 +303,10 @@
       video.playsInline = true;
       video.setAttribute("playsinline", "");
       video.preload = "none";
-      video.dataset.src = DATA.videoBase + "/" + clip.dir + "/" + method + ".mp4";
+      video.dataset.src =
+        DATA.videoBase + "/" + clip.dir + "/" + method.name + ".mp4";
       // Tile shape follows the input clip, once its dimensions are known.
-      if (method === "org") {
+      if (method.role === "input") {
         video.addEventListener("loadedmetadata", function () {
           if (video.videoWidth && video.videoHeight) {
             var ar = video.videoWidth / video.videoHeight;
@@ -293,14 +314,14 @@
               el.style.setProperty("--cmp-ar", String(ar));
             });
             grid.style.gridTemplateColumns =
-              makeGrid(ar, clip.methods.length).style.gridTemplateColumns;
+              makeGrid(ar, self.methods.length).style.gridTemplateColumns;
           }
         });
       }
       box.appendChild(video);
 
       var caption = document.createElement("figcaption");
-      caption.textContent = pretty(method, LABELS);
+      caption.textContent = method.label;
 
       tile.appendChild(box);
       tile.appendChild(caption);
@@ -346,43 +367,26 @@
     });
   };
 
-  var views = [];
-
-  if (videoRoot) {
-    (DATA.videos || []).forEach(function (clip) {
-      var view = new VideoView(clip);
-      videoRoot.appendChild(view.el);
-      views.push(view);
-    });
-  }
-
-  var frameViews = [];
-  if (root) {
-    (DATA.clips || []).forEach(function (clip) {
-      var view = new ClipView(clip);
-      root.appendChild(view.el);
-      frameViews.push(view);
-      views.push(view);
-    });
-  }
-
-  /* Filter chips for the frame grids, one per category present in the data. */
-  var filters = document.getElementById("cmp-filters");
-  if (filters && frameViews.length) {
+  /* Benchmark filter chips scoped to one set of blocks. */
+  function addFilters(host, views) {
     var seen = [];
-    frameViews.forEach(function (view) {
-      if (seen.indexOf(view.clip.category) === -1) {
-        seen.push(view.clip.category);
+    views.forEach(function (view) {
+      var key = view.clip.benchmark;
+      if (seen.indexOf(key) === -1) {
+        seen.push(key);
       }
     });
+    if (seen.length < 2) {
+      return;
+    }
 
     var chips = [];
     function select(value) {
       chips.forEach(function (chip) {
         chip.setAttribute("aria-pressed", String(chip.dataset.value === value));
       });
-      frameViews.forEach(function (view) {
-        var match = value === "all" || view.clip.category === value;
+      views.forEach(function (view) {
+        var match = value === "all" || view.clip.benchmark === value;
         view.el.hidden = !match;
         if (!match) {
           view.stop();
@@ -390,9 +394,15 @@
       });
     }
 
-    [{ value: "all", text: "All" }].concat(seen.map(function (c) {
-      return { value: c, text: pretty(c, CATEGORIES) };
-    })).forEach(function (spec) {
+    var specs = [{ value: "all", text: "All" }];
+    seen.forEach(function (key) {
+      var view = views.find(function (v) {
+        return v.clip.benchmark === key;
+      });
+      specs.push({ value: key, text: view.clip.benchmarkLabel || key });
+    });
+
+    specs.forEach(function (spec) {
       var chip = document.createElement("button");
       chip.type = "button";
       chip.className = "cmp-chip";
@@ -402,12 +412,79 @@
       chip.addEventListener("click", function () {
         select(spec.value);
       });
-      filters.appendChild(chip);
+      host.appendChild(chip);
       chips.push(chip);
     });
   }
 
-  /* Only the clips on screen fetch frames and animate. */
+  var views = [];
+
+  /* One section per size group. */
+  if (groupRoot) {
+    (DATA.groups || []).forEach(function (group) {
+      var clips = (DATA.clips || []).filter(function (clip) {
+        return hasGroup(clip, group.id);
+      });
+      if (!clips.length) {
+        return;
+      }
+
+      var section = document.createElement("section");
+      section.className = "cmp-section";
+      section.id = "comparison-" + group.id;
+
+      var wrap = document.createElement("div");
+      wrap.className = "cmp-wrap";
+
+      var heading = document.createElement("h2");
+      heading.className = "cmp-heading";
+      heading.textContent = group.title;
+      wrap.appendChild(heading);
+
+      if (group.note) {
+        var note = document.createElement("p");
+        note.className = "cmp-intro";
+        note.textContent = group.note
+          + " Drag the slider to step all methods through the clip together,"
+          + " or press play to run the sequence.";
+        wrap.appendChild(note);
+      }
+
+      var filters = document.createElement("div");
+      filters.className = "cmp-filters";
+      wrap.appendChild(filters);
+
+      var host = document.createElement("div");
+      wrap.appendChild(host);
+
+      var sectionViews = clips.map(function (clip) {
+        var view = new ClipView(clip, methodsFor(clip, group.id));
+        host.appendChild(view.el);
+        views.push(view);
+        return view;
+      });
+
+      addFilters(filters, sectionViews);
+
+      section.appendChild(wrap);
+      groupRoot.appendChild(section);
+    });
+  }
+
+  if (videoRoot) {
+    var videoViews = (DATA.videos || []).map(function (clip) {
+      var view = new VideoView(clip);
+      videoRoot.appendChild(view.el);
+      views.push(view);
+      return view;
+    });
+    var videoFilters = document.getElementById("cmp-video-filters");
+    if (videoFilters) {
+      addFilters(videoFilters, videoViews);
+    }
+  }
+
+  /* Only the blocks on screen fetch media and animate. */
   if (window.IntersectionObserver) {
     var byElement = new Map();
     views.forEach(function (view) {

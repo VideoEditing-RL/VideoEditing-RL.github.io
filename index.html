@@ -140,44 +140,25 @@
   <div class="cmp-wrap">
     <h2 class="cmp-heading">Video Results</h2>
     <p class="cmp-intro">
-      Full results for every method on the same clip. Playback starts when a
-      block scrolls into view.
+      Full results for every method on the same clip, across both size classes.
+      Playback starts when a block scrolls into view.
     </p>
+    <div class="cmp-filters" id="cmp-video-filters"></div>
     <div id="cmp-videos"></div>
   </div>
 </section>
 
 
-<!-- Frame-aligned comparison, same generator as the video grids above. -->
-<section class="cmp-section" id="comparison">
+<!-- Frame-aligned comparison. One section per model size group is generated
+     here, from the same data file as the video grids above. -->
+<div id="cmp-groups"></div>
+
+<section class="cmp-section">
   <div class="cmp-wrap">
-    <h2 class="cmp-heading">Qualitative Comparison</h2>
-    <p class="cmp-intro">
-      Each row of tiles shows every method at the same moment of the clip. Drag
-      the slider to step all methods through the video together, or press play
-      to run the sequence.
-    </p>
-    <div class="cmp-filters" id="cmp-filters"></div>
-    <div id="cmp-clips"></div>
     <p class="cmp-note">
       Frames are sampled at matching timestamps across methods. A few baselines
       render portrait clips in landscape, so their tiles appear letterboxed.
     </p>
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <!-- TODO: fill in the author list and the final venue. -->
-    <pre><code>@inproceedings{revedit2026,
-  title     = {Instruction-Based Video Editing: A Novel Framework for
-               Natural Language-Driven Video Manipulation},
-  author    = {Anonymous},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2026},
-}</code></pre>
   </div>
 </section>
 
