@@ -1011,6 +1011,350 @@ window.COMPARISON_DATA = {
           "group": "large"
         }
       ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0035_helicopter_edit2",
+      "category": "",
+      "clip": "0035_helicopter_edit2",
+      "id": "0035",
+      "instruction": "helicopter edit2",
+      "slots": 8,
+      "aspect": 1.7955,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0074_rhino_edit1",
+      "category": "",
+      "clip": "0074_rhino_edit1",
+      "id": "0074",
+      "instruction": "rhino edit1",
+      "slots": 8,
+      "aspect": 1.7955,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0075_A_bicycle_edit2",
+      "category": "",
+      "clip": "0075_A_bicycle_edit2",
+      "id": "0075",
+      "instruction": "A bicycle edit2",
+      "slots": 8,
+      "aspect": 1.7225,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0079_A_bus_edit2",
+      "category": "",
+      "clip": "0079_A_bus_edit2",
+      "id": "0079",
+      "instruction": "A bus edit2",
+      "slots": 8,
+      "aspect": 1.7225,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0089_A_dog_edit2",
+      "category": "",
+      "clip": "0089_A_dog_edit2",
+      "id": "0089",
+      "instruction": "A dog edit2",
+      "slots": 8,
+      "aspect": 1.7225,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0092_A_fox_edit2",
+      "category": "",
+      "clip": "0092_A_fox_edit2",
+      "id": "0092",
+      "instruction": "A fox edit2",
+      "slots": 8,
+      "aspect": 1.7225,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0097_A_bird_edit2",
+      "category": "",
+      "clip": "0097_A_bird_edit2",
+      "id": "0097",
+      "instruction": "A bird edit2",
+      "slots": 8,
+      "aspect": 1.7225,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0100_A_deer_edit1",
+      "category": "",
+      "clip": "0100_A_deer_edit1",
+      "id": "0100",
+      "instruction": "A deer edit1",
+      "slots": 8,
+      "aspect": 1.7225,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
     }
   ],
   "videoBase": "./assets/comparison",
@@ -1209,536 +1553,6 @@ window.COMPARISON_DATA = {
           "group": "large"
         }
       ]
-    }
-  ],
-  "groupVideos": [
-    {
-      "dir": "0035_helicopter_edit2",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0035_helicopter_edit2",
-      "id": "0035",
-      "instruction": "helicopter edit2",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ],
-      "displayGroup": "small"
-    },
-    {
-      "dir": "0074_rhino_edit1",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0074_rhino_edit1",
-      "id": "0074",
-      "instruction": "rhino edit1",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ],
-      "displayGroup": "small"
-    },
-    {
-      "dir": "0075_A_bicycle_edit2",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0075_A_bicycle_edit2",
-      "id": "0075",
-      "instruction": "A bicycle edit2",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ],
-      "displayGroup": "small"
-    },
-    {
-      "dir": "0079_A_bus_edit2",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0079_A_bus_edit2",
-      "id": "0079",
-      "instruction": "A bus edit2",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ],
-      "displayGroup": "small"
-    },
-    {
-      "dir": "0089_A_dog_edit2",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0089_A_dog_edit2",
-      "id": "0089",
-      "instruction": "A dog edit2",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ],
-      "displayGroup": "small"
-    },
-    {
-      "dir": "0092_A_fox_edit2",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0092_A_fox_edit2",
-      "id": "0092",
-      "instruction": "A fox edit2",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ],
-      "displayGroup": "small"
-    },
-    {
-      "dir": "0097_A_bird_edit2",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0097_A_bird_edit2",
-      "id": "0097",
-      "instruction": "A bird edit2",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ],
-      "displayGroup": "small"
-    },
-    {
-      "dir": "0100_A_deer_edit1",
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "category": "",
-      "clip": "0100_A_deer_edit1",
-      "id": "0100",
-      "instruction": "A deer edit1",
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ],
-      "displayGroup": "small"
     }
   ]
 };

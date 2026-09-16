@@ -13,8 +13,7 @@
   var DATA = window.COMPARISON_DATA;
   var groupRoot = document.getElementById("cmp-groups");
   var videoRoot = document.getElementById("cmp-videos");
-  var groupVideoRoot = document.getElementById("cmp-five-5b-videos");
-  if (!DATA || (!groupRoot && !videoRoot && !groupVideoRoot)) {
+  if (!DATA || (!groupRoot && !videoRoot)) {
     return;
   }
 
@@ -249,9 +248,9 @@
 
   /* Whole-video comparison. Results differ in length and frame rate, so each
    * tile loops at its own pace rather than pretending to be frame-synced. */
-  function VideoView(clip, methods) {
+  function VideoView(clip) {
     this.clip = clip;
-    this.methods = methods || clip.methods;
+    this.methods = clip.methods;
     this.videos = [];
     this.loaded = false;
     this.playing = false;
@@ -483,15 +482,6 @@
     if (videoFilters) {
       addFilters(videoFilters, videoViews);
     }
-  }
-
-  if (groupVideoRoot) {
-    (DATA.groupVideos || []).forEach(function (clip) {
-      var groupId = clip.displayGroup || "small";
-      var view = new VideoView(clip, methodsFor(clip, groupId));
-      groupVideoRoot.appendChild(view.el);
-      views.push(view);
-    });
   }
 
   /* Only the blocks on screen fetch media and animate. */
