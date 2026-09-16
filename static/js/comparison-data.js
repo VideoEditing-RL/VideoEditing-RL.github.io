@@ -513,18 +513,6 @@ window.COMPARISON_DATA = {
           "group": "large"
         },
         {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
           "name": "sama",
           "label": "SAMA",
           "role": "baseline",
@@ -543,23 +531,11 @@ window.COMPARISON_DATA = {
           "group": "large"
         },
         {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        },
-        {
           "name": "our14b",
           "label": "Ours (14B)",
           "role": "ours",
           "group": "large"
         },
-        {
-          "name": "our14b_o",
-          "label": "Ours (14B-O)",
-          "role": "ours",
-          "group": "large"
-        }
       ]
     },
     {
@@ -586,24 +562,6 @@ window.COMPARISON_DATA = {
           "group": "large"
         },
         {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
           "name": "sama",
           "label": "SAMA",
           "role": "baseline",
@@ -622,114 +580,11 @@ window.COMPARISON_DATA = {
           "group": "large"
         },
         {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        },
-        {
-          "name": "our14b",
+          "name": "our14b_l",
           "label": "Ours (14B)",
           "role": "ours",
           "group": "large"
         },
-        {
-          "name": "our14b_l",
-          "label": "Ours (14B-L)",
-          "role": "ours",
-          "group": "large"
-        },
-        {
-          "name": "our14b_o",
-          "label": "Ours (14B-O)",
-          "role": "ours",
-          "group": "large"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0075_A_bicycle_edit4",
-      "category": "",
-      "clip": "0075_A_bicycle_edit4",
-      "id": "0075",
-      "instruction": "A bicycle edit4",
-      "slots": 8,
-      "aspect": 1.7206,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        },
-        {
-          "name": "our14b",
-          "label": "Ours (14B)",
-          "role": "ours",
-          "group": "large"
-        },
-        {
-          "name": "our14b_l",
-          "label": "Ours (14B-L)",
-          "role": "ours",
-          "group": "large"
-        },
-        {
-          "name": "our14b_o",
-          "label": "Ours (14B-O)",
-          "role": "ours",
-          "group": "large"
-        }
       ]
     },
     {
