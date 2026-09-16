@@ -67,11 +67,7 @@
 
     var caption = document.createElement("span");
     caption.className = "cmp-instruction";
-    // Category folders name their clips after the instruction, cut to a fixed
-    // width, so those captions get an ellipsis. Clips filed without a category
-    // are named after the footage instead and read fine as they are.
-    var text = clip.instruction || clip.clip;
-    caption.textContent = clip.category ? text + "\u2026" : text;
+    caption.textContent = clip.instruction || clip.clip;
     head.appendChild(caption);
 
     var id = document.createElement("span");
