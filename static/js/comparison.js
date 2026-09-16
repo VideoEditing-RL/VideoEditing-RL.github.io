@@ -248,9 +248,9 @@
 
   /* Whole-video comparison. Results differ in length and frame rate, so each
    * tile loops at its own pace rather than pretending to be frame-synced. */
-  function VideoView(clip) {
+  function VideoView(clip, methods) {
     this.clip = clip;
-    this.methods = clip.methods;
+    this.methods = methods || clip.methods;
     this.videos = [];
     this.loaded = false;
     this.playing = false;
@@ -425,7 +425,10 @@
       var clips = (DATA.clips || []).filter(function (clip) {
         return hasGroup(clip, group.id);
       });
-      if (!clips.length) {
+      var groupVideos = (DATA.groupVideos || []).filter(function (clip) {
+        return clip.displayGroup === group.id && hasGroup(clip, group.id);
+      });
+      if (!clips.length && !groupVideos.length) {
         return;
       }
 
@@ -462,6 +465,12 @@
         host.appendChild(view.el);
         views.push(view);
         return view;
+      });
+      groupVideos.forEach(function (clip) {
+        var view = new VideoView(clip, methodsFor(clip, group.id));
+        host.appendChild(view.el);
+        views.push(view);
+        sectionViews.push(view);
       });
 
       addFilters(filters, sectionViews);
