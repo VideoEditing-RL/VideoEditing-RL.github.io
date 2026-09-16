@@ -814,49 +814,6 @@ window.COMPARISON_DATA = {
     {
       "benchmark": "five",
       "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0089_A_dog_edit2",
-      "category": "",
-      "clip": "0089_A_dog_edit2",
-      "id": "0089",
-      "instruction": "Replace the wagging dog sitting on the sandy beach with a seal clapping its flippers excitedly against the crashing waves.",
-      "slots": 8,
-      "aspect": 1.7225,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
       "dir": "five/0097_A_bird_edit2",
       "category": "",
       "clip": "0097_A_bird_edit2",
