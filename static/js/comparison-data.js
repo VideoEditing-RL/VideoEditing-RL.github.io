@@ -612,24 +612,6 @@ window.COMPARISON_DATA = {
           "group": "large"
         },
         {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
           "name": "sama",
           "label": "SAMA",
           "role": "baseline",
@@ -646,12 +628,6 @@ window.COMPARISON_DATA = {
           "label": "VINO",
           "role": "baseline",
           "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
         },
         {
           "name": "our14b_l",
@@ -737,49 +713,6 @@ window.COMPARISON_DATA = {
           "label": "Ours (14B-O)",
           "role": "ours",
           "group": "large"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0001_bus_edit2",
-      "category": "",
-      "clip": "0001_bus_edit2",
-      "id": "0001",
-      "instruction": "Replace the city bus moving steadily along the tree-lined street with construction barriers with a spaceship gliding smoothly through the same urban environment.",
-      "slots": 8,
-      "aspect": 1.7941,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
         }
       ]
     },
