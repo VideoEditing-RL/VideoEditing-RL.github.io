@@ -13,7 +13,8 @@
   var DATA = window.COMPARISON_DATA;
   var groupRoot = document.getElementById("cmp-groups");
   var videoRoot = document.getElementById("cmp-videos");
-  if (!DATA || (!groupRoot && !videoRoot)) {
+  var groupVideoRoot = document.getElementById("cmp-five-5b-videos");
+  if (!DATA || (!groupRoot && !videoRoot && !groupVideoRoot)) {
     return;
   }
 
@@ -425,10 +426,7 @@
       var clips = (DATA.clips || []).filter(function (clip) {
         return hasGroup(clip, group.id);
       });
-      var groupVideos = (DATA.groupVideos || []).filter(function (clip) {
-        return clip.displayGroup === group.id && hasGroup(clip, group.id);
-      });
-      if (!clips.length && !groupVideos.length) {
+      if (!clips.length) {
         return;
       }
 
@@ -466,12 +464,6 @@
         views.push(view);
         return view;
       });
-      groupVideos.forEach(function (clip) {
-        var view = new VideoView(clip, methodsFor(clip, group.id));
-        host.appendChild(view.el);
-        views.push(view);
-        sectionViews.push(view);
-      });
 
       addFilters(filters, sectionViews);
 
@@ -491,6 +483,15 @@
     if (videoFilters) {
       addFilters(videoFilters, videoViews);
     }
+  }
+
+  if (groupVideoRoot) {
+    (DATA.groupVideos || []).forEach(function (clip) {
+      var groupId = clip.displayGroup || "small";
+      var view = new VideoView(clip, methodsFor(clip, groupId));
+      groupVideoRoot.appendChild(view.el);
+      views.push(view);
+    });
   }
 
   /* Only the blocks on screen fetch media and animate. */
