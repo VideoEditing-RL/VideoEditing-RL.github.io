@@ -857,49 +857,6 @@ window.COMPARISON_DATA = {
     {
       "benchmark": "five",
       "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0092_A_fox_edit2",
-      "category": "",
-      "clip": "0092_A_fox_edit2",
-      "id": "0092",
-      "instruction": "Replace the trotting fox with a robot navigating the snowy forest, leaving small tracks behind instead of paw prints.",
-      "slots": 8,
-      "aspect": 1.7225,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
       "dir": "five/0097_A_bird_edit2",
       "category": "",
       "clip": "0097_A_bird_edit2",
