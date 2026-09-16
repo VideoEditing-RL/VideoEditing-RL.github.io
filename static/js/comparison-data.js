@@ -320,6 +320,30 @@ window.COMPARISON_DATA = {
           "group": "small"
         },
         {
+          "name": "sama",
+          "label": "SAMA",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "univideo",
+          "label": "UniVideo",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "vino",
+          "label": "VINO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "our",
+          "label": "Ours (14B)",
+          "role": "ours",
+          "group": "large"
+        },
+        {
           "name": "our_5b",
           "label": "Ours (5B)",
           "role": "ours",
@@ -361,6 +385,30 @@ window.COMPARISON_DATA = {
           "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
+        },
+        {
+          "name": "sama",
+          "label": "SAMA",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "univideo",
+          "label": "UniVideo",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "vino",
+          "label": "VINO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "our",
+          "label": "Ours (14B)",
+          "role": "ours",
+          "group": "large"
         },
         {
           "name": "our_5b",
@@ -416,7 +464,7 @@ window.COMPARISON_DATA = {
           "label": "Ours (14B)",
           "role": "ours",
           "group": "large"
-        },
+        }
       ]
     },
     {
@@ -465,7 +513,7 @@ window.COMPARISON_DATA = {
           "label": "Ours (14B)",
           "role": "ours",
           "group": "large"
-        },
+        }
       ]
     },
     {
@@ -514,7 +562,7 @@ window.COMPARISON_DATA = {
           "label": "Ours (14B)",
           "role": "ours",
           "group": "large"
-        },
+        }
       ]
     },
     {
@@ -563,7 +611,7 @@ window.COMPARISON_DATA = {
           "label": "Ours (14B)",
           "role": "ours",
           "group": "large"
-        },
+        }
       ]
     },
     {
@@ -584,12 +632,6 @@ window.COMPARISON_DATA = {
           "group": "input"
         },
         {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
           "name": "kiwi",
           "label": "Kiwi-Edit",
           "role": "baseline",
@@ -608,34 +650,10 @@ window.COMPARISON_DATA = {
           "group": "small"
         },
         {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
           "name": "our",
           "label": "Ours (5B)",
           "role": "ours",
           "group": "small"
-        },
-        {
-          "name": "our14b",
-          "label": "Ours (14B)",
-          "role": "ours",
-          "group": "large"
         }
       ]
     },
