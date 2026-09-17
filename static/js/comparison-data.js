@@ -560,6 +560,251 @@ window.COMPARISON_DATA = {
           "group": "large"
         }
       ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0041_longboard_edit1",
+      "category": "",
+      "clip": "0041_longboard_edit1",
+      "id": "0041",
+      "instruction": "Replace the man in the yellow shirt riding the longboard with an astronaut in a yellow shirt on the paved path.",
+      "slots": 8,
+      "aspect": 1.7941,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "ditto",
+          "label": "DITTO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "sama",
+          "label": "SAMA",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "univideo",
+          "label": "UniVideo",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "vino",
+          "label": "VINO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "our",
+          "label": "Ours (14B)",
+          "role": "ours",
+          "group": "large"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0042_gym-ball_edit2",
+      "category": "",
+      "clip": "0042_gym-ball_edit2",
+      "id": "0042",
+      "instruction": "Replace the man lifting the heavy gym ball above his head with a panda performing the same controlled workout in the modern gym.",
+      "slots": 8,
+      "aspect": 1.7941,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "ditto",
+          "label": "DITTO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "sama",
+          "label": "SAMA",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "univideo",
+          "label": "UniVideo",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "vino",
+          "label": "VINO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "our",
+          "label": "Ours (14B)",
+          "role": "ours",
+          "group": "large"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0055_pigs_edit2",
+      "category": "",
+      "clip": "0055_pigs_edit2",
+      "id": "0055",
+      "instruction": "Replace the group of foraging pigs on the dirt ground with a large robotic dragon and two smaller ones moving around each other.",
+      "slots": 8,
+      "aspect": 1.7941,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "ditto",
+          "label": "DITTO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "sama",
+          "label": "SAMA",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "univideo",
+          "label": "UniVideo",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "vino",
+          "label": "VINO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "our",
+          "label": "Ours (14B)",
+          "role": "ours",
+          "group": "large"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0088_A_cyclist_edit4",
+      "category": "",
+      "clip": "0088_A_cyclist_edit4",
+      "id": "0088",
+      "instruction": "Replace the vigorously pedaling cyclist on the tree-lined city park path with a flat cardboard cutout of the cyclist.",
+      "slots": 8,
+      "aspect": 1.7206,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "ditto",
+          "label": "DITTO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "sama",
+          "label": "SAMA",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "univideo",
+          "label": "UniVideo",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "vino",
+          "label": "VINO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "our",
+          "label": "Ours (14B)",
+          "role": "ours",
+          "group": "large"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0089_A_dog_edit4",
+      "category": "",
+      "clip": "0089_A_dog_edit4",
+      "id": "0089",
+      "instruction": "Replace the wagging dog sitting on the sandy beach with a plush dog, keeping its joyful expression against the crashing waves.",
+      "slots": 8,
+      "aspect": 1.7206,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "ditto",
+          "label": "DITTO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "sama",
+          "label": "SAMA",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "univideo",
+          "label": "UniVideo",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "vino",
+          "label": "VINO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
+          "name": "our",
+          "label": "Ours (14B)",
+          "role": "ours",
+          "group": "large"
+        }
+      ]
     }
   ],
   "videoBase": "./assets/comparison",
