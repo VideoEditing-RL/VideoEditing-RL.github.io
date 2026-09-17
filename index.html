@@ -29,10 +29,6 @@
        were never committed to this repository. -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="stylesheet" href="./static/css/comparison.css">
   <link rel="icon" href="./static/images/favicon.svg">
@@ -57,76 +53,6 @@
           <div class="is-size-6 publication-venue">
             Under review
           </div>
-
-          <!-- TODO: point these at the real paper, preprint and code URLs. -->
-          <div class="publication-links">
-            <span class="link-block">
-              <a href="#" class="external-link button is-normal is-rounded is-dark">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>Paper</span>
-              </a>
-            </span>
-            <span class="link-block">
-              <a href="#" class="external-link button is-normal is-rounded is-dark">
-                <span class="icon"><i class="ai ai-arxiv"></i></span>
-                <span>arXiv</span>
-              </a>
-            </span>
-            <span class="link-block">
-              <a href="#" class="external-link button is-normal is-rounded is-dark">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Code</span>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Instruction-based video editing requires transforming a source video
-            according to a natural-language instruction while preserving
-            irrelevant content and remaining temporally coherent. We argue that
-            existing Diffusion Transformer (DiT) editors struggle with this task
-            for two structural reasons. First, conditioning signals are fed
-            <em>undifferentiated</em> into all transformer blocks, forcing a
-            single token stream to encode both global editing intent and
-            fine-grained visual evidence. Second, the cross-attention patterns
-            that govern the edit are supervised only <em>indirectly</em> through
-            pixel-level reconstruction, leaving the model's internal reasoning
-            process underconstrained.
-          </p>
-          <p>
-            To address both limitations, we propose
-            <span class="method-name">ReVEDiT</span>, an implicit
-            <u>Re</u>asoning <u>V</u>ideo <u>E</u>diting <u>DiT</u> framework
-            built around two complementary components. The first,
-            <em>Granularity-Routed Token Conditioning</em>, introduces learnable
-            editing tokens distilled from a multimodal LLM and routes them to
-            shallow blocks, while reserving native visual and textual tokens for
-            deeper blocks, thereby inducing a coarse-to-fine editing process
-            inside the backbone. The second,
-            <em>Reference-Anchored Attention Alignment</em>, employs a
-            parameter-sharing reference branch during training and maximizes the
-            mutual information between the attention features of the editing and
-            reference branches, regularizing the model's internal reasoning
-            without incurring any additional inference cost.
-          </p>
-          <p>
-            Experiments on standard instruction-based video editing benchmarks
-            show that <span class="method-name">ReVEDiT</span> consistently
-            outperforms state-of-the-art baselines, with particularly strong
-            gains on localized and compositional edits.
-          </p>
         </div>
       </div>
     </div>

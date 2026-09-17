@@ -35,36 +35,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.publication-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  justify-content: center;
-  margin-top: 1.2rem;
-}
-
-.publication-links .button {
-  background: #1f2430;
-  border-color: #1f2430;
-  color: #fff;
-}
-
-.publication-links .button:hover {
-  background: #363d4d;
-  border-color: #363d4d;
-  color: #fff;
-}
-
 .content h2.title,
 h2.title.is-3 {
   font-family: "Google Sans", "Noto Sans", system-ui, sans-serif;
   font-weight: 600;
-}
-
-/* Marks the method name wherever it appears in running text. */
-.method-name {
-  font-weight: 600;
-  font-variant: small-caps;
 }
 
 .todo {

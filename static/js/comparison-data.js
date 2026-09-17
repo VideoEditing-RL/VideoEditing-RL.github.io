@@ -4,14 +4,14 @@ window.COMPARISON_DATA = {
   "base": "./assets/frames",
   "groups": [
     {
-      "id": "small",
-      "title": "Comparison with Models up to 5B",
-      "note": "Our 5B model against baselines in the same size class."
-    },
-    {
       "id": "large",
       "title": "Comparison with Models from 13B",
       "note": "Our 14B model against the larger baselines."
+    },
+    {
+      "id": "small",
+      "title": "Comparison with Models up to 5B",
+      "note": "Our 5B model against baselines in the same size class."
     }
   ],
   "clips": [
@@ -554,56 +554,7 @@ window.COMPARISON_DATA = {
           "group": "large"
         },
         {
-          "name": "our14b",
-          "label": "Ours (14B)",
-          "role": "ours",
-          "group": "large"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0041_longboard_edit1",
-      "category": "",
-      "clip": "0041_longboard_edit1",
-      "id": "0041",
-      "instruction": "Replace the man in the yellow shirt riding the longboard with an astronaut in a yellow shirt on the paved path.",
-      "slots": 8,
-      "aspect": 1.7941,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
+          "name": "our14b_o",
           "label": "Ours (14B)",
           "role": "ours",
           "group": "large"
