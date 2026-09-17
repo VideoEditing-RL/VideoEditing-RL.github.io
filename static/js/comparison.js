@@ -56,12 +56,10 @@
     var head = document.createElement("div");
     head.className = "cmp-clip-head";
 
-    var badge = document.createElement("span");
-    badge.className = "cmp-badge";
-    badge.textContent = clip.category
-      ? prettyCategory(clip.category)
-      : clip.benchmarkLabel || "";
-    if (badge.textContent) {
+    if (clip.category) {
+      var badge = document.createElement("span");
+      badge.className = "cmp-badge";
+      badge.textContent = prettyCategory(clip.category);
       head.appendChild(badge);
     }
 
@@ -363,56 +361,6 @@
     });
   };
 
-  /* Benchmark filter chips scoped to one set of blocks. */
-  function addFilters(host, views) {
-    var seen = [];
-    views.forEach(function (view) {
-      var key = view.clip.benchmark;
-      if (seen.indexOf(key) === -1) {
-        seen.push(key);
-      }
-    });
-    if (seen.length < 2) {
-      return;
-    }
-
-    var chips = [];
-    function select(value) {
-      chips.forEach(function (chip) {
-        chip.setAttribute("aria-pressed", String(chip.dataset.value === value));
-      });
-      views.forEach(function (view) {
-        var match = value === "all" || view.clip.benchmark === value;
-        view.el.hidden = !match;
-        if (!match) {
-          view.stop();
-        }
-      });
-    }
-
-    var specs = [{ value: "all", text: "All" }];
-    seen.forEach(function (key) {
-      var view = views.find(function (v) {
-        return v.clip.benchmark === key;
-      });
-      specs.push({ value: key, text: view.clip.benchmarkLabel || key });
-    });
-
-    specs.forEach(function (spec) {
-      var chip = document.createElement("button");
-      chip.type = "button";
-      chip.className = "cmp-chip";
-      chip.dataset.value = spec.value;
-      chip.textContent = spec.text;
-      chip.setAttribute("aria-pressed", String(spec.value === "all"));
-      chip.addEventListener("click", function () {
-        select(spec.value);
-      });
-      host.appendChild(chip);
-      chips.push(chip);
-    });
-  }
-
   var views = [];
 
   /* One section per size group. */
@@ -446,21 +394,14 @@
         wrap.appendChild(note);
       }
 
-      var filters = document.createElement("div");
-      filters.className = "cmp-filters";
-      wrap.appendChild(filters);
-
       var host = document.createElement("div");
       wrap.appendChild(host);
 
-      var sectionViews = clips.map(function (clip) {
+      clips.forEach(function (clip) {
         var view = new ClipView(clip, methodsFor(clip, group.id));
         host.appendChild(view.el);
         views.push(view);
-        return view;
       });
-
-      addFilters(filters, sectionViews);
 
       section.appendChild(wrap);
       groupRoot.appendChild(section);
@@ -468,16 +409,11 @@
   }
 
   if (videoRoot) {
-    var videoViews = (DATA.videos || []).map(function (clip) {
+    (DATA.videos || []).forEach(function (clip) {
       var view = new VideoView(clip);
       videoRoot.appendChild(view.el);
       views.push(view);
-      return view;
     });
-    var videoFilters = document.getElementById("cmp-video-filters");
-    if (videoFilters) {
-      addFilters(videoFilters, videoViews);
-    }
   }
 
   /* Only the blocks on screen fetch media and animate. */

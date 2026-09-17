@@ -18,79 +18,6 @@ window.COMPARISON_DATA = {
     {
       "benchmark": "openve",
       "benchmarkLabel": "OpenVE-Bench",
-      "dir": "openve/0023_global_style_Apply_the_Gongbi_ani",
-      "category": "global_style",
-      "clip": "0023_global_style_Apply_the_Gongbi_ani",
-      "id": "0023",
-      "instruction": "Apply Gongbi animation style with refined linework.",
-      "slots": 8,
-      "aspect": 0.5625,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "ditto",
-          "label": "DITTO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (14B)",
-          "role": "ours",
-          "group": "large"
-        },
-        {
-          "name": "our_5b",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "openve",
-      "benchmarkLabel": "OpenVE-Bench",
       "dir": "openve/0054_global_style_Apply_the_Chinese_In",
       "category": "global_style",
       "clip": "0054_global_style_Apply_the_Chinese_In",
@@ -165,73 +92,6 @@ window.COMPARISON_DATA = {
           "label": "OmniVideo",
           "role": "baseline",
           "group": "small"
-        },
-        {
-          "name": "our_5b",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "openve",
-      "benchmarkLabel": "OpenVE-Bench",
-      "dir": "openve/0108_local_change_Change_the_mans_hai",
-      "category": "local_change",
-      "clip": "0108_local_change_Change_the_mans_hai",
-      "id": "0108",
-      "instruction": "Change the man's hair color to platinum blonde.",
-      "slots": 8,
-      "aspect": 1.7778,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (14B)",
-          "role": "ours",
-          "group": "large"
         },
         {
           "name": "our_5b",
@@ -320,30 +180,6 @@ window.COMPARISON_DATA = {
           "group": "small"
         },
         {
-          "name": "sama",
-          "label": "SAMA",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "univideo",
-          "label": "UniVideo",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "vino",
-          "label": "VINO",
-          "role": "baseline",
-          "group": "large"
-        },
-        {
-          "name": "our",
-          "label": "Ours (14B)",
-          "role": "ours",
-          "group": "large"
-        },
-        {
           "name": "our_5b",
           "label": "Ours (5B)",
           "role": "ours",
@@ -387,6 +223,123 @@ window.COMPARISON_DATA = {
           "group": "small"
         },
         {
+          "name": "our_5b",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0057_dog_edit5",
+      "category": "",
+      "clip": "0057_dog_edit5",
+      "id": "0057",
+      "instruction": "Add a crown to the head of the golden retriever sniffing the ground in the dry, grassy yard.",
+      "slots": 8,
+      "aspect": 1.7941,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "five",
+      "benchmarkLabel": "FiVE-Bench",
+      "dir": "five/0075_A_bicycle_edit2",
+      "category": "",
+      "clip": "0075_A_bicycle_edit2",
+      "id": "0075",
+      "instruction": "Replace the rolling bicycle with a skateboard gliding steadily along the cobblestone street lined with old buildings.",
+      "slots": 8,
+      "aspect": 1.7225,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "kiwi",
+          "label": "Kiwi-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "lucy",
+          "label": "Lucy-Edit",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "omni",
+          "label": "OmniVideo",
+          "role": "baseline",
+          "group": "small"
+        },
+        {
+          "name": "our",
+          "label": "Ours (5B)",
+          "role": "ours",
+          "group": "small"
+        }
+      ]
+    },
+    {
+      "benchmark": "openve",
+      "benchmarkLabel": "OpenVE-Bench",
+      "dir": "openve/0023_global_style_Apply_the_Gongbi_ani",
+      "category": "global_style",
+      "clip": "0023_global_style_Apply_the_Gongbi_ani",
+      "id": "0023",
+      "instruction": "Apply Gongbi animation style with refined linework.",
+      "slots": 8,
+      "aspect": 0.5625,
+      "methods": [
+        {
+          "name": "org",
+          "label": "Input",
+          "role": "input",
+          "group": "input"
+        },
+        {
+          "name": "ditto",
+          "label": "DITTO",
+          "role": "baseline",
+          "group": "large"
+        },
+        {
           "name": "sama",
           "label": "SAMA",
           "role": "baseline",
@@ -409,12 +362,6 @@ window.COMPARISON_DATA = {
           "label": "Ours (14B)",
           "role": "ours",
           "group": "large"
-        },
-        {
-          "name": "our_5b",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
         }
       ]
     },
@@ -611,307 +558,6 @@ window.COMPARISON_DATA = {
           "label": "Ours (14B)",
           "role": "ours",
           "group": "large"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0057_dog_edit5",
-      "category": "",
-      "clip": "0057_dog_edit5",
-      "id": "0057",
-      "instruction": "Add a crown to the head of the golden retriever sniffing the ground in the dry, grassy yard.",
-      "slots": 8,
-      "aspect": 1.7941,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0035_helicopter_edit2",
-      "category": "",
-      "clip": "0035_helicopter_edit2",
-      "id": "0035",
-      "instruction": "Replace the hovering helicopter with a UFO above the helipad, transforming its rapidly spinning rotors into the UFO's rapidly spinning lights.",
-      "slots": 8,
-      "aspect": 1.7955,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0074_rhino_edit1",
-      "category": "",
-      "clip": "0074_rhino_edit1",
-      "id": "0074",
-      "instruction": "Replace the large rhinoceros walking slowly through the rocky enclosure with scattered trees and large boulders with a large elephant navigating the same terrain.",
-      "slots": 8,
-      "aspect": 1.7955,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0075_A_bicycle_edit2",
-      "category": "",
-      "clip": "0075_A_bicycle_edit2",
-      "id": "0075",
-      "instruction": "Replace the rolling bicycle with a skateboard gliding steadily along the cobblestone street lined with historic buildings and flower boxes.",
-      "slots": 8,
-      "aspect": 1.7225,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0079_A_bus_edit2",
-      "category": "",
-      "clip": "0079_A_bus_edit2",
-      "id": "0079",
-      "instruction": "Replace the bus driving steadily through the rainy city street with a hovercraft gliding over the wet pavement under glowing streetlights.",
-      "slots": 8,
-      "aspect": 1.7225,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0097_A_bird_edit2",
-      "category": "",
-      "clip": "0097_A_bird_edit2",
-      "id": "0097",
-      "instruction": "Replace the bird building a nest in the tree with a dragon carefully arranging twigs and leaves.",
-      "slots": 8,
-      "aspect": 1.7225,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
-        }
-      ]
-    },
-    {
-      "benchmark": "five",
-      "benchmarkLabel": "FiVE-Bench",
-      "dir": "five/0100_A_deer_edit1",
-      "category": "",
-      "clip": "0100_A_deer_edit1",
-      "id": "0100",
-      "instruction": "Replace the deer drinking from the clear stream with a large moose in the sunlit forest.",
-      "slots": 8,
-      "aspect": 1.7225,
-      "methods": [
-        {
-          "name": "org",
-          "label": "Input",
-          "role": "input",
-          "group": "input"
-        },
-        {
-          "name": "kiwi",
-          "label": "Kiwi-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "lucy",
-          "label": "Lucy-Edit",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "omni",
-          "label": "OmniVideo",
-          "role": "baseline",
-          "group": "small"
-        },
-        {
-          "name": "our",
-          "label": "Ours (5B)",
-          "role": "ours",
-          "group": "small"
         }
       ]
     }
